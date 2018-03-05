@@ -1,23 +1,23 @@
 <?php
 
 //Minecraft API!
-$hub = "ServerIP:PORT";
+$hub = "https://api.mcsrvstat.us/1/ServerIP:PORT";
 $content = file_get_contents($hub);
 $json = json_decode($content, true);
 
-$survival = "ServerIP:PORT";
+$survival = "https://api.mcsrvstat.us/1/ServerIP:PORT";
 $content2 = file_get_contents($survival);
 $json2 = json_decode($content2, true);
 
-$factions = "ServerIP:PORT";
+$factions = "https://api.mcsrvstat.us/1/ServerIP:PORT";
 $content1 = file_get_contents($factions);
 $json1 = json_decode($content1, true);
 
-$hardcore = "ServerIP:PORT";
+$hardcore = "https://api.mcsrvstat.us/1/ServerIP:PORT";
 $content3 = file_get_contents($hardcore);
 $json3 = json_decode($content3, true);
 
-$prison = "ServerIP:PORT";
+$prison = "https://api.mcsrvstat.us/1/ServerIP:PORT";
 $content11 = file_get_contents($prison);
 $json11 = json_decode($content11, true);
 
