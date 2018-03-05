@@ -1,0 +1,214 @@
+.upgrade-overflow {
+    overflow: auto;
+}
+
+.upgrade-center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.upgrade-banner,
+.prime-head,
+.supreme-head {
+    font-family: "Montserrat", sans-serif;
+}
+
+.upgrade-transform {
+    text-transform: uppercase;
+}
+
+.upgrade-banner {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.upgrade-col5 {
+    float: left;
+    width: 5%;
+}
+
+.upgrade-col50 {
+    float: left;
+    width: 50%;
+}
+
+.upgrade-spacer-top {
+    margin-top: 40px;
+}
+
+.upgrade-spacer-left {
+    margin-right: 10px;
+}
+
+.upgrade-spacer-right {
+    margin-left: 30px;
+}
+
+.upgrade-spacer-center {
+    margin-left: 400px;
+}
+
+.prime-head,
+.supreme-head {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    padding: 30px 20px;
+    border-radius: 2px 2px 0px 0px;
+}
+
+.prime-head {
+    background: rgba(137, 196, 244, 0.1);
+    border-bottom: 3px solid #89C4F4;
+    color: #89C4F4;
+}   
+
+.supreme-head {
+    background: rgba(243, 84, 245, 0.1);
+    border-bottom: 3px solid #F354F5;
+    color: #F354F5;
+}  
+
+.upgrade-row,
+.upgrade-row2 {
+    border-top: 1px solid #303030;
+    border-bottom: 1px solid #151515;
+    padding: 15px 10px;
+}
+
+.upgrade-row {
+    background: #252525;
+}
+
+.upgrade-row2 {
+    background: #202020;
+}
+
+.upgrade-row:first-child,
+.upgrade-row2:first-child {
+    border-top: none;
+}
+
+.upgrade-row:last-child,
+.upgrade-row2:last-child {
+    border-bottom: none;
+}
+
+.upgrade-balance {
+    font-size: 25px;
+    text-align: right;
+    margin-top: 4px;
+}
+
+.upgrade-row-wrap {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.upgrade-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.upgrade-col2 {
+    width: 40px;
+    text-align: right;
+}
+
+.upgrade-col3 {
+    width: 200px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.upgrade-icon-prime,
+.upgrade-icon-supreme,
+.upgrade-icon-check,
+.upgrade-icon-nocheck {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.upgrade-icon-prime i,
+.upgrade-icon-supreme i {
+    line-height: 35px;
+}
+
+.upgrade-icon-prime {
+    background: rgba(137, 196, 244, 0.1);
+    color: #89C4F4;
+}
+
+.upgrade-icon-supreme {
+    background: rgba(243, 84, 245, 0.1);
+    color: #F354F5;
+}
+
+.upgrade-icon-check {
+    background: rgba(75, 154, 42, 0.3);
+    color: #4B9A2A;
+}
+
+.upgrade-icon-nocheck {
+    background: rgba(209, 39, 39, 0.3);
+    color: #D12727;
+}
+
+.supreme-hex {
+    color: #F354F5;
+    text-shadow: 0px 0px 8px #000;
+}
+
+.upgrade-username {
+    font-size: 18px;
+}
+
+.upgrade-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.purchase-button-prime,
+.purchase-button-supreme {
+    padding: 10px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.purchase-button-prime {
+    background: rgba(137, 196, 244, 0.1);
+    color: #89C4F4;
+}
+
+.purchase-button-prime:hover {
+    background: rgba(137, 196, 244, 1);
+    color: #fff;
+}
+
+.purchase-button-supreme {
+    background: rgba(243, 84, 245, 0.1);
+    color: #F354F5;
+}
+
+.purchase-button-supreme:hover {
+    background: rgba(243, 84, 245, 1);
+    color: #fff;
+}
+
+.buy-upgrade-button,
+.button-upgrade {
+    background: #151515;
+    color: #fff;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 2px;
+}
+		
+		

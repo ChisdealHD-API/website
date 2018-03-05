@@ -1,0 +1,72 @@
+.thread_status:before {
+    font-family: "FontAwesome";
+    font-size: 16px;
+}
+.thread_status.dot_folder:before {
+    color: #a0a0a0;
+    content: "\f075"
+}
+.thread_status.dot_hotfolder:before {
+    color: #a0a0a0;
+    content: "\f06d"
+}
+.thread_status.dot_hotlockfolder:before {
+    color: #a0a0a0;
+    content: "\f06d"
+}
+.thread_status.dot_lockfolder:before {
+    color: #a0a0a0;
+    content: "\f023"
+}
+.thread_status.dot_newfolder:before {
+    color: #3498db;
+    content: "\f15c"
+}
+.thread_status.dot_newhotfolder:before {
+    color: #3498db;
+    content: "\f06d"
+}
+.thread_status.dot_newhotlockfolder:before {
+    color: #3498db;
+    content: "\f06d"
+}
+.thread_status.dot_newlockfolder:before {
+    color: #3498db;
+    content: "\f023"
+}
+.thread_status.folder:before {
+    color: #a0a0a0;
+    content: "\f075"
+}
+.thread_status.hotfolder:before {
+    color: #a0a0a0;
+    content: "\f06d"
+}
+.thread_status.hotlockfolder:before {
+    color: #a0a0a0;
+    content: "\f06d"
+}
+.thread_status.lockfolder:before {
+    color: #a0a0a0;
+    content: "\f023"
+}
+.thread_status.newfolder:before {
+    color: #3498db;
+    content: "\f075"
+}
+.thread_status.newhotfolder:before {
+    color: #3498db;
+    content: "\f06d"
+}
+.thread_status.newhotlockfolder:before {
+    color: #3498db;
+    content: "\f06d"
+}
+.thread_status.newlockfolder:before {
+    color: #3498db;
+    content: "\f023"
+}
+		
+		
+		
+		

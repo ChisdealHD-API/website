@@ -1,0 +1,203 @@
+.facebook-widget:hover,
+.twitter-widget:hover,
+.whatsapp-widget:hover,
+.pinterest-widget:hover,
+.instagram-widget:hover,
+.appstore-widget:hover,
+.spotify-widget:hover,
+.youtube-widget:hover,
+.paypal-widget:hover,
+.footer-link a:hover,
+.footer-copyright a:hover,
+.thead a:hover,
+.thead-alt a:hover,
+.tcat a:hover,
+.trow_selected a:hover,
+.tfoot a:hover,
+.navigation a:hover,
+.popup_menu .popup_item:hover,
+.popup_menu a.popup_item:hover,
+.red_alert a:hover,
+.pagination a:hover,
+.post .post_meta a:hover,
+.postbit_buttons > a:hover,
+a:hover,
+a.button:hover,
+button:hover,
+input.button:hover,
+div.jqi .jqibuttons button:hover {
+	-webkit-transition-duration: .25s;
+	-moz-transition-duration: .25s;
+	-o-transition-duration: .25s;
+	-ms-transition-duration: .25s;
+	transition-duration: .25s
+}
+
+.thead-alt {
+	-webkit-border-top-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	border-top-left-radius: 3px;
+}
+
+.thead {
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.tcat-bottom {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.tfoot {
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-left-radius: 3px;	
+}
+
+.navigation {
+	-webkit-border-top-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	border-top-left-radius: 3px;
+}
+
+tr td.trow1:first-child,
+tr td.trow2:first-child,
+tr td.trow_shaded:first-child {
+	border-left: 0;
+}
+
+tr td.trow1:last-child,
+tr td.trow2:last-child,
+tr td.trow_shaded:last-child {
+	border-right: 0;
+}
+
+.tborder tbody tr:last-child td {
+	border-bottom: 0;
+}
+
+.thead_left {
+	-moz-border-radius-topright: 0;
+	-webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.thead_right {
+	-moz-border-radius-topleft: 0;
+	-webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.tcat_menu {
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+  	border-radius: 0 !important;
+}
+
+.tborder tbody:nth-last-child(2) .tcat_collapse_collapsed {
+	-moz-border-radius-bottomleft: 6px !important;
+	-moz-border-radius-bottomright: 6px !important;
+	-webkit-border-bottom-left-radius: 6px !important;
+	-webkit-border-bottom-right-radius: 6px !important;
+	border-bottom-left-radius: 6px !important;
+	border-bottom-right-radius: 6px !important;
+}
+
+.forum_on,
+.forum_off, 
+.forum_offlock, 
+.forum_offlink,
+.lastpost-box,
+.lastpost-box-alt,
+.stats-box {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+button,
+input.button,
+input.textbox,
+input.invalid_field,
+input.valid_field,
+select,
+textarea,
+.editor_control_bar,
+blockquote,
+.codeblock,
+fieldset,
+.pm_alert,
+.red_alert,
+.popup_menu,
+.postbit_buttons > a,
+a.button,
+.facebook-widget,
+.twitter-widget,
+.whatsapp-widget,
+.pinterest-widget,
+.instagram-widget,
+.appstore-widget,
+.spotify-widget,
+.youtube-widget,
+.paypal-widget,
+.profile-usertitle,
+.profile-statsbox,
+.profile-box,
+.profile-button {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.profile-sidebar,
+.profile-back {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.popup_menu .popup_item_container:first-child .popup_item {
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.popup_menu .popup_item_container:last-child .popup_item {
+	-moz-border-radius-bottomleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.pagination a {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.pollbar {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+		
+		
+		
+		
