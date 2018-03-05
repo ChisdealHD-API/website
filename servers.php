@@ -45,11 +45,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>	
-      <a class="navbar-brand"  class="active" href="index.html">Discore</a>
+      <a class="navbar-brand" href="index.html">Discore</a>
     </div>
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav">
-	    <li><a href="servers.php">Servers</a></li>
+	    <li><a  class="active"  href="servers.php">Servers</a></li>
         <li><a href="https://www.facebook.com/krampuscommunity">Facebook</a></li>
         <li><a href="https://www.twitter.com/krampuscomm">Twitter</a></li>
         <li><a href="https://www.youtube.com/channel/UCn6_OHO2n5gjzJGIobH-XIA">YouTube</a></li>
@@ -128,16 +128,24 @@ function secondsToString(seconds) {
 	    	async: true,
 	    	success: function(data) {
 	    	var json = jQuery.parseJSON(data);
-          	jQuery('#hubOnline').text(json.Servers.Minecraft.Hub.Online);
-          	jQuery('#hubPlayers').text(json.Servers.Minecraft.Hub.onlineCount);
-			jQuery('#factionsOnline').text(json.Servers.Minecraft.Factions.Online);
-          	jQuery('#factionsPlayers').text(json.Servers.Minecraft.Factions.onlineCount);
-			jQuery('#survivalOnline').text(json.Servers.Minecraft.Survival.Online);
-          	jQuery('#survivalPlayers').text(json.Servers.Minecraft.Survival.onlineCount);
-			jQuery('#hcSkyblockOnline').text(json.Servers.Minecraft.HardcoreSkyblock.Online);
-          	jQuery('#hcSkyblockPlayers').text(json.Servers.Minecraft.HardcoreSkyblock.onlineCount);
-			jQuery('#prisonOnline').text(json.Servers.Minecraft.Prison.Online);
-          	jQuery('#prisonPlayers').text(json.Servers.Minecraft.Prison.onlineCount);
+		jQuery('#bungeeOnline').text(json.Servers.Minecraft.Bungee.Online);
+          	jQuery('#bungeePlayers').text(json.Servers.Minecraft.Bungee.onlineCount);
+          	jQuery('#rustOnline').text(json.Servers.Rust.Online);
+          	jQuery('#rustPlayers').text(json.Servers.Rust.onlineCount);
+		jQuery('#arkOnline').text(json.Servers.ARK.Online);
+          	jQuery('#arkPlayers').text(json.Servers.ARK.onlineCount);
+		jQuery('#terrariaOnline').text(json.Servers.Terraria.Online);
+          	jQuery('#terrariaPlayers').text(json.Servers.Terraria.onlineCount);
+		//jQuery('#hcSkyblockOnline').text(json.Servers.Minecraft.HardcoreSkyblock.Online);
+          	//jQuery('#hcSkyblockPlayers').text(json.Servers.Minecraft.HardcoreSkyblock.onlineCount);
+		//jQuery('#prisonOnline').text(json.Servers.Minecraft.Prison.Online);
+          	//jQuery('#prisonPlayers').text(json.Servers.Minecraft.Prison.onlineCount);
+
+		//Version/Maps
+		jQuery('#terrariaMap').text(json.Servers.Terraria.Map);
+          	jQuery('#terrariaVersion').text(json.Servers.Terraria.Version);
+		jQuery('#arkMap').text(json.Servers.ARK.Map);
+          	jQuery('#arkVersion').text(json.Servers.ARK.Version);
           	//lastrestart = json.lastrestart;
 	        //jQuery('#lastrestart').text(new Date(json.lastrestart * 1000));
 	       }
@@ -158,26 +166,25 @@ function secondsToString(seconds) {
   <!--Left Col-->
     <div class="col-sm-3">
 		<div class="status">
-			<h3>Minecraft Server Status</h3>
+			<h3>Server Status</h3>
 			<table style="width:100%">
 			<tr>
 				<td><h4>Server</h4></td><td><h4>Status</h4></td><td><h4>Players</h4></td>
 			</tr>
 			<tr>
-				<td><p>Lobby</p></td><td><p id="hubOnline"></p></td><td><p align="center" id="hubPlayers"></p></td>
+				<td><p>Minecraft Server</p></td><td><p id="bungeeOnline"></p></td><td><p align="center" id="bungeePlayers"></p></td>
 			</tr>
 			<tr>
-				<td><p>HC Skyblock</p></td><td><p id="hcSkyblockOnline"></p></td><td><p align="center" id="hcSkyblockPlayers"></p></td>
-			</tr>
-			<tr>
-				<td><p>OP Prison</p></td><td><p id="prisonOnline"></p></td><td><p align="center" id="prisonPlayers"></p></td>
+				<td><p>ARK Server</p></td><td><p id="arkOnline"></p></td><td><p align="center" id="arkPlayers"></p></td>
 			</tr>			
 			<tr>
-				<td><p>Factions</p></td><td><p id="factionsOnline"></p></td><td><p align="center" id="factionsPlayers"></p></td>
+				<td><p>Terraria Server</p></td><td><p id="terrariaOnline"></p></td><td><p align="center" id="terrariaPlayers"></p></td>
 			</tr>
 			<tr>
-				<td><p>Survival</p></td><td><p id="survivalOnline"></p></td><td><p align="center" id="survivalPlayers"></p></td>
+				<td><p>Rust Server</p></td><td><p id="rustOnline"></p></td><td><p align="center" id="rustPlayers"></p></td>
 			</tr>
+			
+
 			</table>
 		</div>
 
@@ -185,6 +192,7 @@ function secondsToString(seconds) {
 		<h3>Our Game Servers</h3>
           <button class="tablinks" onclick="openServer(event, 'Minecraft')">Minecraft</button>
           <button class="tablinks" onclick="openServer(event, 'ARK')">ARK</button>
+		  <button class="tablinks" onclick="openServer(event, 'Terraria')">Terraria</button>
           <button class="tablinks" onclick="openServer(event, 'Rust')">Rust</button>
           <button class="tablinks" onclick="openServer(event, '7 Days to Die')">7 Days to Die</button>
         </div>
@@ -212,7 +220,25 @@ function secondsToString(seconds) {
         </div>
 		<div id="ARK" class="tabcontent">
 		<h3>ARK Information</h3>
+			<h5>Server Version</h5>
+			  <ul style="list-style-type:none">
+				<li id="arkVersion"></li>
+			  </ul>				
 			<h5>Maps</h5>
+			  <ul style="list-style-type:none">
+				<li id="arkMap"></li>
+			  </ul>			
+		</div>
+		<div id="Terraria" class="tabcontent">
+		<h3>Terraria Information</h3>
+			<h5>Server Version</h5>
+			  <ul style="list-style-type:none">
+				<li id="terrariaVersion"></li>
+			  </ul>				
+			<h5>Maps</h5>
+			  <ul style="list-style-type:none">
+				<li id="terrariaMap"></li>
+			  </ul>
 		</div>
 		<div id="Rust" class="tabcontent">
 		<h3>Rust Information</h3>
