@@ -13,7 +13,7 @@ $config['database']['table_prefix'] = 'mybb_';
 
 $config['database']['hostname'] = 'localhost';
 $config['database']['username'] = 'root';
-$config['database']['password'] = 'JaxionTVSQL112';
+$config['database']['password'] = '';
 
 /**
  * Admin CP directory
