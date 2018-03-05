@@ -11,7 +11,7 @@ final class Settings {
         $this->host = 'localhost';
         $this->port = 3306;
 
-        $database = 'data';
+        $database = 'database';
 
         $username = 'root';
         $password = 'SQL Password';
