@@ -8,12 +8,12 @@
  */
 
 $config['database']['type'] = 'mysqli';
-$config['database']['database'] = 'minecraftdata';
+$config['database']['database'] = 'database';
 $config['database']['table_prefix'] = 'mybb_';
 
 $config['database']['hostname'] = 'localhost';
 $config['database']['username'] = 'root';
-$config['database']['password'] = '';
+$config['database']['password'] = 'Your SQL password HERE';
 
 /**
  * Admin CP directory
