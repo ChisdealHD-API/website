@@ -1,23 +1,23 @@
 <?php
 
 //Minecraft API!
-$hub = "https://api.mcsrvstat.us/1/158.69.245.200:3000";
+$hub = "ServerIP:PORT";
 $content = file_get_contents($hub);
 $json = json_decode($content, true);
 
-$survival = "https://api.mcsrvstat.us/1/158.69.245.200:3001";
+$survival = "ServerIP:PORT";
 $content2 = file_get_contents($survival);
 $json2 = json_decode($content2, true);
 
-$factions = "https://api.mcsrvstat.us/1/158.69.245.200:3002";
+$factions = "ServerIP:PORT";
 $content1 = file_get_contents($factions);
 $json1 = json_decode($content1, true);
 
-$hardcore = "https://api.mcsrvstat.us/1/158.69.245.200:3003";
+$hardcore = "ServerIP:PORT";
 $content3 = file_get_contents($hardcore);
 $json3 = json_decode($content3, true);
 
-$prison = "https://api.mcsrvstat.us/1/158.69.245.200:3004";
+$prison = "ServerIP:PORT";
 $content11 = file_get_contents($prison);
 $json11 = json_decode($content11, true);
 
@@ -25,14 +25,6 @@ $json11 = json_decode($content11, true);
 $ark = "";
 $content4 = file_get_contents($ark);
 $json4 = json_decode($content4, true);
-
-$youtubeapi = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=UCl_74sFMm1Sm3ePaRGrSnqg&key=AIzaSyDDXdcjnginiXlTiefabrfaVRqz53J6Rzo";
-$content6 = file_get_contents($youtubeapi);
-$json6 = json_decode($content6, true);
-
-$youtubeapi11 = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCl_74sFMm1Sm3ePaRGrSnqg&key=AIzaSyDDXdcjnginiXlTiefabrfaVRqz53J6Rzo";
-$content12 = file_get_contents($youtubeapi11);
-$json12 = json_decode($content12, true);
 
 $ar = [];
 $ar['Addons'] = [];
