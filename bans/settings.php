@@ -11,10 +11,10 @@ final class Settings {
         $this->host = 'localhost';
         $this->port = 3306;
 
-        $database = 'minecraftdata';
+        $database = 'data';
 
         $username = 'root';
-        $password = 'JaxionTVSQL112';
+        $password = 'SQL Password';
 
         // If you set a table prefix in config.yml, set it here as well
         $this->table_prefix = "litebans_";
